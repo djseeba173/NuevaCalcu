@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+    <link href="Content/Chart.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body class="body" onload="Ejemplo()">
+    <div class="container">
+        <p id="titulo1" class="titulo text-center" style="background-color: lawngreen"> Bienvenido a la Calculadora de </p>
+        <p id="titulo2" class="titulo text-center" style="background-color: lawngreen"> Raices de una cuadrática</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p style="background-color: red"> Ingrese los datos de la ecuación así: </p>
+            <input style="margin-top: 10px" id="ejemplo" type="text" readonly>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <label class="cajitas"> A </label>
+                <input style="margin-right: 10px" id="A" type="number" />
+            </div>
+            <div class="col-lg-4">
+                <label class="cajitas"> B </label>
+                <input style="margin-left: 10px" id="B" type="number" />
+            </div>
+            <div class="col-lg-4">
+                <label class="cajitas"> C </label>
+                <input style="margin-left: 10px" id="C" type="number" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="paraResultado1" onclick="SacarLasRaices()" style="margin-top: 10px" class="form-control btn-outline-dark boton"> Calcular Raices </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label class="cajitas"> Raíz 1 </label>
+                <input style="margin-top: 10px" id="resultado" type="text" readonly>
+            </div>
+            <div class="col-lg-6">
+                <label class="cajitas"> Raíz 2 </label>
+                <input style="margin-top: 10px" id="resultado2" type="text" readonly>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+</html>
