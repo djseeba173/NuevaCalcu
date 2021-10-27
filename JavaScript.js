@@ -13,12 +13,8 @@ function SacarLasRaices() {
 
 function calcularRaizCuadrada(A, B, C) {
     var cuentaProblematica = (B * B) - (4 * A * C);
-    var resultadoReal = 0;
-    if (cuentaProblematica > 0) {
-        resultadoReal = Math.sqrt(cuentaProblematica);
-    }
 
-    return resultadoReal;
+    return (cuentaProblematica) > 0 ? Math.sqrt(cuentaProblematica) : 0;
 }
 
 function SacarRaiz1() {
